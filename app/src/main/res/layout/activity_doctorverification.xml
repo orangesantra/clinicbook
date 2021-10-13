@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Doctorsregistration.Doctorverification">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar21"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="#1081B8"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Verification"
+        app:titleTextColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView83"
+        android:layout_width="152dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        android:text="Status"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar21" />
+
+    <TextView
+        android:id="@+id/textView102"
+        android:layout_width="243dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="156dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        android:text="Date of Registration"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar21" />
+
+    <TextView
+        android:id="@+id/registerdateofclinic"
+        android:layout_width="243dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="224dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar21" />
+
+    <TextView
+        android:id="@+id/clinicownername"
+        android:layout_width="198dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="324dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar21" />
+
+    <TextView
+        android:id="@+id/textView104"
+        android:layout_width="142dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="324dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        android:text="Owner"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar21" />
+
+    <TextView
+        android:id="@+id/verifiedclinic"
+        android:layout_width="152dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="228dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        android:text="Verified"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar21" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="133dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="65dp"
+        android:text="Unregister"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView104" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.abcd">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".loginfeature.server"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Aboutplace.investmoredetail"></activity>
+        <activity android:name=".Aboutplace.webrecommendothers" />
+        <activity android:name=".Aboutplace.MainActivity" />
+        <activity android:name=".Aboutplace.facebookgroup" />
+        <activity android:name=".Aboutplace.investorlist" />
+        <activity android:name=".Investorsweb" />
+        <activity android:name=".Aboutplace.ourinvester" />
+        <activity android:name=".Aboutplace.telegramcommunity" />
+        <activity android:name=".Aboutplace.dicsord" />
+        <activity android:name=".Aboutplace.Eligibility" />
+        <activity android:name=".Howtoregister" />
+        <activity android:name=".Aboutplace.howtoopen" />
+        <activity android:name=".abcdofficialwebsite" />
+        <activity android:name=".Aboutplace.contactusabcd" />
+        <activity android:name=".Aboutplace.exploremore" />
+        <activity android:name=".Aboutplace.termsandconditionpage" />
+        <activity android:name=".Aboutplace.submitstudentpage" />
+        <activity android:name=".Aboutplace.Studentregisterpage" />
+        <activity android:name=".Aboutplace.mapdoctor" />
+        <activity android:name=".Aboutplace.studentpage" />
+        <activity android:name=".contactclinic" />
+        <activity android:name=".hosclidocdetailslist.twitterclinic" />
+        <activity android:name=".hosclidocdetailslist.facebookclinic" />
+        <activity android:name=".hosclidocdetailslist.clinicwebpage" />
+        <activity android:name=".hosclidocdetailslist.moreinfocli" />
+        <activity android:name=".facebookpage" />
+        <activity android:name=".AboutInfoPage" />
+        <activity android:name=".Aboutplace.ClinicRegistration" />
+        <activity android:name=".Aboutplace.Registrationdoctor" />
+        <activity android:name=".Doctorsregistration.MainActivity" />
+        <activity android:name=".Doctorsregistration.Doctorverification" />
+        <activity android:name=".stateandcity" />
+        <activity android:name=".hosclidocdetailslist.Doctormoredetails" />
+        <activity android:name=".hosclidocnamelist.HospitalData" />
+        <activity android:name=".hosclidocdetailslist.DoctorsDetails" />
+        <activity android:name=".UserId" />
+        <activity android:name=".Myappointmentpackage.Myappointmentlist" />
+        <activity android:name=".Timingperperson" />
+        <activity android:name=".Timingsedule" />
+        <activity android:name=".Recyclerviewdetails.Bookedlist" />
+        <activity android:name=".AppointmentTimeClinic" />
+        <activity
+            android:name=".DependantDetails"
+            android:fitsSystemWindows="true"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".BookAppointmentTime" />
+        <activity android:name=".BookAppointments.BookAppointment" />
+        <activity android:name=".hosclidocdetailslist.Clinicmoredetails" />
+        <activity android:name=".hosclidocdetailslist.Clinicdetails" />
+        <activity android:name=".hosclidocnamelist.Hosclidoctor" />
+        <activity android:name=".Confirmationscreen" />
+        <activity android:name=".Article.Articledetails" />
+        <activity android:name=".Article.Articleactivity" />
+        <activity android:name=".loginfeature.loginsignup" />
+        <activity android:name=".loginfeature.signuponly" />
+        <activity android:name=".Aboutplace.placenamelist" />
+        <activity android:name=".loginfeature.ProfileActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Aboutplace.placeinformation" />
+        <activity android:name=".EveryoneDetail.Individualdetails" />
+        <activity android:name=".Recyclerviewdetails.Requestlist" />
+        <activity android:name=".EveryoneDetail.officialdetails" />
+        <activity android:name=".EveryoneDetail.MoreDetails" />
+        <activity android:name=".EveryoneDetail.Details" />
+        <activity android:name=".other" />
+        <activity android:name=".paymentprocedure.Payment" />
+        <activity android:name=".Listresult" />
+        <activity
+            android:name=".loginfeature.Splashscreen"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

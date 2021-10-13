@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppointmentTimeClinic">
+
+    <TextView
+        android:id="@+id/finaldatechoosen"
+        android:layout_width="168dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        android:text="Friday, 12 May"
+        android:textColor="#053C6C"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView75"
+        android:layout_width="133dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        android:text="Appointment Date"
+        android:textColor="#090909"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#1081B8"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:subtitle="Select Time"
+        app:subtitleTextColor="#FFFFFF"
+        app:title="Book Appointment"
+        app:titleTextColor="#FFFFFF" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="42dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="42dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutevening"
+        android:layout_width="325dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:onClick="eveningmethod"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutafternoon">
+
+        <TextView
+            android:id="@+id/evening"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:background="@drawable/back"
+            android:gravity="center|fill_horizontal"
+            android:onClick="eveningmethod"
+            android:paddingLeft="20dp"
+            android:text="Third Shift"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar4" />
+
+        <TextView
+            android:id="@+id/thirdshiftvalue"
+            android:layout_width="184dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:onClick="eveningmethod"
+            android:text="Not Available!"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutafternoon"
+        android:layout_width="325dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:onClick="afternoonmethod"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutmorning">
+
+        <TextView
+            android:id="@+id/afternoon"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:onClick="afternoonmethod"
+            android:text="Second Shift"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar4" />
+
+        <TextView
+            android:id="@+id/secondshiftvalue"
+            android:layout_width="184dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:onClick="afternoonmethod"
+            android:text="Not Available!"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutmorning"
+        android:layout_width="325dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:onClick="morningmethod"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/textView69">
+
+        <TextView
+            android:id="@+id/morning"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:background="@drawable/back"
+            android:gravity="center|fill_horizontal"
+            android:onClick="morningmethod"
+            android:paddingLeft="20dp"
+            android:text="First Shift"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar4" />
+
+        <TextView
+            android:id="@+id/firstshiftvalue"
+            android:layout_width="184dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:onClick="morningmethod"
+            android:text="Not Available!"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar4" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView69"
+        android:layout_width="229dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/back"
+        android:gravity="fill"
+        android:paddingLeft="6dp"
+        android:text="Please select a time below"
+        android:textColor="#0F648E"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar4" />
+
+    <TextView
+        android:id="@+id/textView74"
+        android:layout_width="119dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="2dp"
+        android:background="#1081B8"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="nextx"
+        android:text="Next"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutevening" />
+</androidx.constraintlayout.widget.ConstraintLayout>

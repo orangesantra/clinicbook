@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".BookAppointmentTime">
+
+    <TextView
+        android:id="@+id/textView71"
+        android:layout_width="133dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="104dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        android:text="Appointment Date"
+        android:textColor="#053C6C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView72"
+        android:layout_width="133dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="104dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        android:text="Friday, 12 May"
+        android:textColor="#053C6C"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="39dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="39dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_end="41dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="327dp"
+        android:layout_height="385dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline">
+
+        <TextView
+            android:id="@+id/textView73"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#0D7AAF"
+            android:gravity="fill"
+            android:paddingLeft="10dp"
+            android:text="Select Appointment Time"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/timespinner"
+            android:layout_width="123dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="16dp"
+            android:background="#FFFFFF"
+            android:contextClickable="true"
+            android:defaultFocusHighlightEnabled="true"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="97dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:text="7:00 AM"
+            android:textColor="#1B1919" />
+
+        <TextView
+            android:id="@+id/t13"
+            android:layout_width="97dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="270dp"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:text="7:00 AM"
+            android:textColor="#1B1919" />
+
+        <TextView
+            android:id="@+id/t10"
+            android:layout_width="97dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="220dp"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:text="7:00 AM"
+            android:textColor="#1B1919" />
+
+        <TextView
+            android:id="@+id/t7"
+            android:layout_width="97dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="170dp"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:text="7:00 AM"
+            android:textColor="#1B1919" />
+
+        <TextView
+            android:id="@+id/t4"
+            android:layout_width="97dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:text="7:00 AM"
+            android:textColor="#1B1919" />
+
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="97dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:text="7:00 AM"
+            android:textColor="#1B1919" />
+
+        <TextView
+            android:id="@+id/t15"
+            android:layout_width="97dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="270dp"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:text="7:00 AM"
+            android:textColor="#1B1919" />
+
+        <TextView
+            android:id="@+id/t12"
+            android:layout_width="97dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="220dp"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:text="7:00 AM"
+            android:textColor="#1B1919" />
+
+        <TextView
+            android:id="@+id/t9"
+            android:layout_width="97dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="170dp"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:text="7:00 AM"
+            android:textColor="#1B1919" />
+
+        <TextView
+            android:id="@+id/t6"
+            android:layout_width="97dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:text="7:00 AM"
+            android:textColor="#1B1919" />
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="97dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="115dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:text="7:00 AM"
+            android:textColor="#1B1919" />
+
+        <TextView
+            android:id="@+id/t14"
+            android:layout_width="97dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="115dp"
+            android:layout_marginTop="270dp"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:text="7:00 AM"
+            android:textColor="#1B1919" />
+
+        <TextView
+            android:id="@+id/t11"
+            android:layout_width="97dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="115dp"
+            android:layout_marginTop="220dp"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:text="7:00 AM"
+            android:textColor="#1B1919" />
+
+        <TextView
+            android:id="@+id/t8"
+            android:layout_width="97dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="115dp"
+            android:layout_marginTop="170dp"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:text="7:00 AM"
+            android:textColor="#1B1919" />
+
+        <TextView
+            android:id="@+id/t5"
+            android:layout_width="97dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="115dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:text="7:00 AM"
+            android:textColor="#1B1919" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="102dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="44dp"
+        android:background="#148AC3"
+        android:text="Proceed"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar6"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#1081B8"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Book Appointment"
+        app:titleTextColor="#FFFFFF" />
+</androidx.constraintlayout.widget.ConstraintLayout>

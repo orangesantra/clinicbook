@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!--The drawer items below have been categorized according to headers-->
+	<item
+		android:id="@+id/navigation_item_1"
+		android:title="Your Profile">
+		<menu>
+			<item
+				android:id="@+id/item_contactno"
+				android:checkable="true"
+				android:icon="@drawable/ic_baseline_phone_24"
+				android:title="Contact no" />
+			<item
+				android:id="@+id/item_address"
+				android:checkable="true"
+				android:icon="@drawable/ic_baseline_location_on_24"
+				android:title="Address" />
+
+			<item
+				android:id="@+id/item_email"
+				android:checkable="true"
+				android:icon="@drawable/ic_baseline_mail_outline_24"
+				android:title="Email Address" />
+
+			<item
+				android:id="@+id/item_history"
+				android:checkable="true"
+				android:icon="@drawable/ic_baseline_history_24"
+				android:title="History" />
+
+
+		</menu>
+	</item>
+
+	<item
+		android:id="@+id/navigation_item_2"
+		android:title="Settings">
+		<menu>
+			<item
+				android:id="@+id/item_notification"
+				android:checkable="true"
+				android:icon="@drawable/ic_baseline_notifications_none_24"
+				android:title="Notification" />
+
+			<item
+				android:id="@+id/item_privacy"
+				android:checkable="true"
+				android:icon="@drawable/ic_baseline_priority_high_24"
+				android:title="Privacy" />
+
+			<item
+				android:id="@+id/item_theme"
+				android:checkable="true"
+				android:icon="@drawable/ic_baseline_crop_square_24"
+				android:title="Theme" />
+
+			<item
+				android:id="@+id/item_language"
+				android:checkable="true"
+				android:icon="@drawable/ic_baseline_language_24"
+				android:title="Language" />
+
+		</menu>
+	</item>
+
+	<item
+		android:id="@+id/navigation_item3"
+		android:title="Support">
+
+		<menu>
+			<item
+				android:id="@+id/item_question"
+				android:checkable="true"
+				android:icon="@drawable/ic_baseline_report_problem_24"
+				android:title="Ask a Question" />
+			<item
+				android:id="@+id/item_faq"
+				android:checkable="true"
+				android:icon="@drawable/ic_baseline_accessibility_24"
+				android:title="F A Q" />
+
+			<item
+				android:id="@+id/item_poilicy"
+				android:checkable="true"
+				android:icon="@drawable/ic_baseline_policy_24"
+				android:title="Privacy Policy" />
+
+
+		</menu>
+	</item>
+
+	<item
+		android:id="@+id/navigation_item4"
+		android:title="Log Out">
+
+		<menu>
+			<item
+				android:id="@+id/item_logout"
+				android:checkable="true"
+				android:icon="@drawable/ic_baseline_replay_24"
+				android:title="Logout" />
+
+
+		</menu>
+	</item>
+
+</menu>

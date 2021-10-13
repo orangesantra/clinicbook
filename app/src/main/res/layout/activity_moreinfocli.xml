@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hosclidocdetailslist.moreinfocli">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar23"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#1E88E5"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Clinic Name"
+        app:titleTextColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView112"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="128dp"
+        android:text="About"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar23" />
+
+    <TextView
+        android:id="@+id/textView120"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="256dp"
+        android:text="Clinic Official Website "
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar23" />
+
+    <TextView
+        android:id="@+id/textView114"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="42dp"
+        android:text="Established"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar23" />
+
+    <TextView
+        android:id="@+id/estdateclinic"
+        android:layout_width="136dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="42dp"
+        android:text="1947"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.603"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar23" />
+
+    <TextView
+        android:id="@+id/aboutclinicmore"
+        android:layout_width="337dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView112" />
+
+    <TextView
+        android:id="@+id/clinicweburl"
+        android:layout_width="337dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:onClick="clinicurl"
+        android:text="http://chutiaclinic/scoacdcmdsocdsvmopdsoopodps//jkdcndsvkdsvdldkvidsvdsd;.com"
+        android:textColor="#304FFE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView120" />
+
+    <TextView
+        android:id="@+id/textView113"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="124dp"
+        android:text="Views"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutclinicmore" />
+
+    <TextView
+        android:id="@+id/textView115"
+        android:layout_width="85dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="Rating"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewsaboutclinic" />
+
+    <TextView
+        android:id="@+id/viewsaboutclinic"
+        android:layout_width="337dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="chor clinic h yaha mat ana!"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView113" />
+
+    <RatingBar
+        android:id="@+id/ratingBar2"
+        android:layout_width="223dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView115" />
+
+    <TextView
+        android:id="@+id/showinmap"
+        android:layout_width="105dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:background="#2148B5"
+        android:gravity="center"
+        android:text="Show in Map"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView114" />
+
+    <TextView
+        android:id="@+id/textView117"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="10dp"
+        android:text="Owned by"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/showinmap"
+        app:layout_constraintTop_toBottomOf="@+id/estdateclinic" />
+
+    <TextView
+        android:id="@+id/ownedby"
+        android:layout_width="150dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="36dp"
+        android:text="Central government of india"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/showinmap"
+        app:layout_constraintTop_toBottomOf="@+id/textView117" />
+
+    <ImageView
+        android:id="@+id/clincfacebook"
+        android:layout_width="33dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="32dp"
+        android:clickable="true"
+        android:onClick="facebookclinic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.956"
+        app:srcCompat="@drawable/ic_facebook" />
+
+    <ImageView
+        android:id="@+id/clinictwitter"
+        android:layout_width="33dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="44dp"
+        android:onClick="twitterclinic"
+        app:layout_constraintStart_toEndOf="@+id/clincfacebook"
+        app:layout_constraintTop_toBottomOf="@+id/textView115"
+        app:srcCompat="@drawable/ic_twitter" />
+
+    <TextView
+        android:id="@+id/textView121"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="15dp"
+        android:text="Follow us on"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView115" />
+
+    <TextView
+        android:id="@+id/textView122"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:text="Want to know more abot us !"
+        app:layout_constraintStart_toEndOf="@+id/textView121"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar2" />
+
+    <TextView
+        android:id="@+id/textView123"
+        android:layout_width="252dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="28dp"
+        android:text="Leave us message, We will contact you within 24 hrs!"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/clinictwitter"
+        app:layout_constraintTop_toBottomOf="@+id/textView122" />
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:clickable="true"
+        android:onClick="contactclinic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.793"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView122"
+        app:srcCompat="@drawable/ic_baseline_chat_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>

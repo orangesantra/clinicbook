@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".DependantDetails">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar7"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#1081B8"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Book Appointment"
+        app:titleTextColor="#FFFFFF" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="401dp"
+        android:layout_height="569dp"
+
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar7"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/Appointmentdetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:background="@drawable/back"
+                    android:gravity="center"
+                    android:outlineAmbientShadowColor="#0E6893"
+                    android:outlineSpotShadowColor="#095073"
+                    android:text="Your Appointment Details"
+                    android:textColor="#101010"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:id="@+id/textView89"
+                    android:layout_width="97dp"
+                    android:layout_height="29dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="0dp"
+                    android:background="#046493"
+                    android:gravity="center"
+                    android:text="Date"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="82dp"
+                    android:layout_height="29dp"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="87dp"
+                    android:background="#046493"
+                    android:gravity="center"
+                    android:text="Time"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/datefinal"
+                    android:layout_width="219dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/back"
+                    android:gravity="center"
+                    android:text="02:10PM - 02:10PM"
+                    android:textColor="#035B85"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/timefinal"
+                    android:layout_width="219dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:background="@drawable/back"
+                    android:gravity="center"
+                    android:text="02:10PM - 02:10PM"
+                    android:textColor="#036593"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView93"
+                android:layout_width="97dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="40dp"
+                android:background="#046493"
+                android:gravity="center"
+                android:text="Clinic"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/locationfinal"
+                android:layout_width="391dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/back"
+                android:paddingLeft="6dp"
+                android:text="xyz,burtai,303,golwopra,Pat,Wuhan"
+                android:textColor="#035B85"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView95"
+                android:layout_width="105dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="40dp"
+                android:background="#046493"
+                android:gravity="center"
+                android:text="Department"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/departmentfinal"
+                android:layout_width="155dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/back"
+                android:gravity="center"
+                android:paddingLeft="0dp"
+                android:text="Gystrology"
+                android:textColor="#035B85"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/themecolor" />
+
+            <TextView
+                android:id="@+id/textView101"
+                android:layout_width="158dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:gravity="fill"
+                android:paddingLeft="6dp"
+                android:text="Depandant Details"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView103"
+                android:layout_width="175dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="32dp"
+                android:background="#FFFFFF"
+                android:gravity="fill"
+                android:paddingLeft="6dp"
+                android:text="Please fill Details below"
+                android:textColor="#039BE5"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/nameofdependent"
+                android:layout_width="214dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/back"
+                android:ems="10"
+                android:hint="Name of Dependant"
+                android:inputType="textPersonName"
+                android:paddingLeft="6dp"
+                android:textColorHint="#99A7AE"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/departmentfinal" />
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="214dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/back"
+                android:ems="10"
+                android:hint="Age"
+                android:inputType="textPersonName"
+                android:paddingLeft="6dp"
+                android:textColorHint="#99A7AE"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/departmentfinal" />
+
+            <LinearLayout
+                android:layout_width="354dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/back"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.737">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="73dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12.5dp"
+                    android:layout_marginBottom="0dp"
+                    android:gravity="left"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="2dp"
+
+                    android:text="Gender"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="#092D8E"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/dependantgender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="18dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toTopOf="@+id/divider2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider">
+
+
+                    <RadioButton
+                        android:id="@+id/DependentMale"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Male"
+                        android:textColor="#092D8E"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+                    <RadioButton
+                        android:id="@+id/DependentFemale"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Female"
+                        android:textColor="#092D8E"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/radio_pirates" />
+
+
+                    <RadioButton
+                        android:id="@+id/Dependantothers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Others"
+                        android:textColor="#092D8E"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/radio_pirates" />
+                </RadioGroup>
+                />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/contactnumber"
+                android:layout_width="214dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/back"
+                android:ems="20"
+                android:hint="Contact No."
+                android:inputType="textPersonName|phone"
+                android:paddingLeft="6dp"
+                android:textColorHint="#99A7AE"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/departmentfinal" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="126dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="50dp"
+                app:cardBackgroundColor="#0E96D8"
+                app:cardCornerRadius="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/textView97"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="confirmBooking"
+                    android:text="Book Now"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

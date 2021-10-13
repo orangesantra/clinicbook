@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutInfoPage">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar22"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#1081B8"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="About Us"
+        app:titleTextColor="#FFFFFF" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView8"
+        android:layout_width="356dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar22">
+
+        <TextView
+            android:id="@+id/adoutusdescriotion"
+            android:layout_width="match_parent"
+            android:layout_height="132dp"
+            android:paddingStart="10dp"
+            android:text="We are this and that" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/emailaboutus"
+        android:layout_width="164dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="24dp"
+        android:paddingStart="10dp"
+        android:text="kk@gmail.com"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView8" />
+
+    <TextView
+        android:id="@+id/phonenoaboutus"
+        android:layout_width="164dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="24dp"
+        android:paddingStart="10dp"
+        android:text="1234567890"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView8" />
+
+    <TextView
+        android:id="@+id/textView108"
+        android:layout_width="165dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="228dp"
+        android:paddingStart="10dp"
+        android:text="Email id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView8" />
+
+    <TextView
+        android:id="@+id/textView106"
+        android:layout_width="165dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="228dp"
+        android:paddingStart="10dp"
+        android:text="Phone No."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView8" />
+
+    <TextView
+        android:id="@+id/textView107"
+        android:layout_width="165dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="228dp"
+        android:paddingStart="10dp"
+        android:text="Address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView8" />
+
+    <TextView
+        android:id="@+id/addressaboutus"
+        android:layout_width="165dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="24dp"
+        android:paddingStart="10dp"
+        android:text="xyz,Road"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView8" />
+
+    <TextView
+        android:id="@+id/textView109"
+        android:layout_width="167dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="228dp"
+        android:paddingStart="10dp"
+        android:text="Conatact Us !"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView8" />
+
+    <TextView
+        android:id="@+id/textView110"
+        android:layout_width="167dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="228dp"
+        android:paddingStart="10dp"
+        android:text="Ask your doubt below"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView8" />
+
+    <Button
+        android:id="@+id/ask"
+        android:layout_width="95dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="289dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="submitdout"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/askdout"
+        android:layout_width="351dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="This is good this bad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView110" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="33dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="17dp"
+        android:clickable="true"
+        android:onClick="facebook"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView107"
+        app:srcCompat="@drawable/ic_facebook" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="33dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:clickable="true"
+        android:onClick="instagram"
+        app:layout_constraintStart_toEndOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/textView107"
+        app:srcCompat="@drawable/ic_instagram" />
+
+    <TextView
+        android:id="@+id/textView111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="23dp"
+        android:clickable="false"
+        android:onClick="frequentlyaskedquestion"
+        android:text="Frequently Asked Question !"
+        android:textColor="#0948F4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/askdout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

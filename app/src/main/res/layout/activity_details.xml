@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C3E1F4"
+    android:gravity="center"
+    android:onClick="clickme">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="@color/places_text_black_alpha_26" />
+
+    <LinearLayout
+        android:layout_width="375dp"
+        android:layout_height="507dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="20dp"
+        android:elevation="10sp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name_of_patient">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/n1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/t2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/patient_parent_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/n2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/t3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/contact_no">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/n3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:maxLength="10" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="73dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12.5dp"
+                android:layout_marginBottom="0dp"
+                android:gravity="left"
+                android:paddingLeft="3dp"
+                android:paddingTop="8dp"
+
+                android:text="Gender"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#092D8E"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="18dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/divider2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider">
+
+
+                <RadioButton
+                    android:id="@+id/DependentMale"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Male"
+                    android:textColor="#092D8E"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+                <RadioButton
+                    android:id="@+id/DependentFemale"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Female"
+                    android:textColor="#092D8E"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/radio_pirates" />
+
+
+                <RadioButton
+                    android:id="@+id/Dependantothers"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Others"
+                    android:textColor="#092D8E"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/radio_pirates" />
+            </RadioGroup>
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:background="#79C5F4"
+                android:clickable="true"
+                android:gravity="center|left"
+                android:paddingLeft="80dp"
+                android:text="Select your Date of birth"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/State"
+                android:layout_width="147dp"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:paddingLeft="3dp"
+                android:paddingTop="6dp"
+                android:text="State"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#092D8E"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spinnerstate"
+                android:layout_width="220dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/City"
+                android:layout_width="147dp"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:paddingLeft="3dp"
+                android:paddingTop="6dp"
+                android:text="City"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#092D8E"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:layout_width="220dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/i1"
+                android:layout_width="168dp"
+                android:layout_height="38dp"
+                android:background="@color/design_default_color_primary_variant"
+                android:clickable="true"
+                android:onClick="back"
+                app:srcCompat="@drawable/ic_baseline_chevron_left_24" />
+
+            <ImageView
+                android:id="@+id/i2"
+                android:layout_width="168dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="35dp"
+                android:background="@color/design_default_color_primary_variant"
+                android:clickable="true"
+                android:onClick="next"
+                app:srcCompat="@drawable/ic_baseline_navigate_next_24" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnDate"
+        android:layout_width="235dp"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="542dp"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp"
+            android:text="Select Date of Appointment"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#092D8E" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="37dp"
+            android:layout_height="33dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="20dp"
+            android:background="@color/quantum_bluegrey100"
+            app:cardBackgroundColor="#EEF2F6">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+
+                app:srcCompat="@drawable/ic_baseline_calendar_today_24" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSelectedDate"
+        android:layout_width="147dp"
+        android:layout_height="47dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="2dp"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="24sp" />
+
+</RelativeLayout>
+

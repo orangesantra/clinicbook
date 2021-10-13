@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".hosclidocdetailslist.DoctorsDetails">
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="413dp"
+        android:layout_height="167dp"
+        android:background="@drawable/mygrad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar15"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/mygrad"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Doctor Details"
+        app:titleTextColor="#FFFFFF" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView7"
+        android:layout_width="342dp"
+        android:layout_height="135dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17">
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="94dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="23dp"
+            android:src="@drawable/b" />
+
+        <TextView
+            android:id="@+id/doctornametextview"
+            android:layout_width="201dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="23dp"
+            android:text="Name"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/departmentup"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="55dp"
+            android:text="Department" />
+
+        <View
+            android:id="@+id/divider13"
+            android:layout_width="100dp"
+            android:layout_height="8dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="115dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/themecolor"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="110dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="90dp"
+            android:background="#026B9E"
+            android:onClick="moredetailsdoctors"
+            android:text="More Details"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="342dp"
+        android:layout_height="349dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.774">
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="243dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="180dp"
+            android:gravity="center|fill_horizontal"
+            android:text="Department"
+            android:textColor="#1B1A1A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/departmenttextviewD"
+            android:layout_width="310dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="220dp"
+            android:background="@drawable/back"
+            android:gravity="center|fill_horizontal"
+            android:paddingStart="5dp"
+            android:text="Not provided !"
+            android:textColor="#045C87"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="243dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp"
+            android:gravity="center|fill_horizontal"
+            android:text="Associated Hospital/ Clinic"
+            android:textColor="#1B1A1A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView82"
+            android:layout_width="243dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center|fill_horizontal"
+            android:text="Location"
+            android:textColor="#1B1A1A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/Associatedtextview"
+            android:layout_width="310dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="140dp"
+            android:background="@drawable/back"
+            android:gravity="center|fill_horizontal"
+            android:paddingStart="5dp"
+            android:text="Not provided !"
+            android:textColor="#045C87"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/locationtextviewD"
+            android:layout_width="310dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/back"
+            android:gravity="center|fill_horizontal"
+            android:paddingStart="5dp"
+            android:text="Not provided !"
+            android:textColor="#045C87"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/booknowbuttondoctor"
+            android:layout_width="109dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="290dp"
+            android:background="#4CA0EA"
+            android:onClick="booknowdoctor"
+            android:text="Book Now"
+            android:textColor="#FBFBFB" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewdx"
+        android:layout_width="373dp"
+        android:layout_height="182dp"
+        android:background="#0398E1"
+        app:cardBackgroundColor="#039BE5"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="85dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="235dp"
+            android:layout_marginTop="50dp"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="0dp">
+
+            <TextView
+                android:id="@+id/textView59"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="visitd"
+                android:text="Visit"
+                android:textSize="24sp" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView90"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginTop="172dp"
+            android:background="#FFFFFF" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="85dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="0dp">
+
+            <TextView
+                android:id="@+id/textView58"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="online"
+                android:text="Online"
+                android:textSize="24sp" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView91"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_marginLeft="114dp"
+            android:layout_marginTop="10dp"
+            android:text="Choose an option"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewcrossd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="325dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:onClick="closed"
+            app:srcCompat="@drawable/ic_baseline_close_24" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

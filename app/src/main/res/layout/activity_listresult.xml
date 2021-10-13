@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Listresult">
+
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#384CAF"
+        android:gravity="center"
+        android:paddingLeft="40dp"
+        android:subtitleTextAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:title="Welcome back !"
+        android:titleMarginStart="37dp"
+        android:titleTextColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="190dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="72dp"
+        android:defaultFocusHighlightEnabled="true"
+        android:filterTouchesWhenObscured="true"
+        android:gravity="center"
+        android:paddingLeft="0dp"
+        android:text="Register As a..."
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#3A40AF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rdg"
+        android:layout_width="364dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="31dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register">
+
+        <RadioButton
+            android:id="@+id/serviceseeker"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked1"
+            android:paddingLeft="2dp"
+            android:text="Service seeker"
+            android:textColor="#3A40AF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+        <RadioButton
+            android:id="@+id/serviceprovider"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="onRadioButtonClicked1"
+            android:text="Service provider"
+            android:textColor="#3A40AF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="344dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="68dp"
+        android:alpha="100"
+        android:background="#3A40AF"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Proceed..."
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdg" />
+
+
+    drawable/ic_baseline_local_hospital_24.xml
+
+</androidx.constraintlayout.widget.ConstraintLayout>

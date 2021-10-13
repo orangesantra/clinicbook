@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Timingsedule">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/timingtoolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="#1081B8"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Timing Sedule"
+        app:titleTextColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/mon"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="112dp"
+        android:background="@color/quantum_lightblue300"
+        android:clickable="true"
+        android:gravity="center"
+
+        android:onClick="m1"
+        android:text="Monday"
+        android:textColor="#0F1F7C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fri"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="150dp"
+        android:background="@color/quantum_lightblue300"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="m5"
+        android:text="Friday"
+        android:textColor="#0F1F7C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/wed"
+        android:layout_width="86dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="214dp"
+        android:layout_marginTop="112dp"
+        android:background="@color/quantum_lightblue300"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="m3"
+        android:text="Wednesday"
+        android:textColor="#0F1F7C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sun"
+        android:layout_width="86dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="214dp"
+        android:layout_marginTop="150dp"
+        android:background="@color/quantum_lightblue300"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="m7"
+        android:text="Sunday"
+        android:textColor="#0F1F7C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/thur"
+        android:layout_width="76dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="312dp"
+        android:layout_marginTop="112dp"
+        android:background="@color/quantum_lightblue300"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="m4"
+        android:text="Thursday"
+        android:textColor="#0F1F7C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tue"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="112dp"
+        android:background="@color/quantum_lightblue300"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="m2"
+        android:text="Tuesday"
+        android:textColor="#0F1F7C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sat"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="150dp"
+        android:background="@color/quantum_lightblue300"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="m6"
+        android:text="Saturday"
+        android:textColor="#0F1F7C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="19dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="394dp" />
+
+    <TextView
+        android:id="@+id/dayFinal"
+        android:layout_width="373dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="30dp"
+        android:background="#027280"
+        android:paddingLeft="20dp"
+        android:paddingTop="3dp"
+        android:text="Select a Day from above"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toBottomOf="@+id/fri" />
+
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="64dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="34dp"
+        android:background="#035D88"
+        android:onClick="save"
+        android:shadowRadius="10"
+        android:text="Save"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dayFinal" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="373dp"
+        android:layout_height="273dp"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/save">
+
+        <TextView
+            android:id="@+id/textView80"
+            android:layout_width="162dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:text="FIRST SHIFT"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/from"
+            android:layout_width="107dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="120dp"
+            android:background="#039BE5"
+            android:gravity="center"
+            android:text="FROM"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline9"
+            app:layout_constraintTop_toBottomOf="@+id/dayFinal" />
+
+        <TextView
+            android:id="@+id/to"
+            android:layout_width="107dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="165dp"
+            android:background="#039BE5"
+            android:gravity="center"
+            android:text="TO"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline9"
+            app:layout_constraintTop_toBottomOf="@+id/dayFinal" />
+
+        <TextView
+            android:id="@+id/textView81"
+            android:layout_width="162dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="220dp"
+            android:background="@drawable/back"
+            android:gravity="center"
+            android:text="SECOND SHIFT"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline9"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.716" />
+
+        <Spinner
+            android:id="@+id/hr1"
+
+            android:layout_width="74dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/back"
+            app:layout_constraintStart_toEndOf="@+id/from"
+            app:layout_constraintTop_toBottomOf="@+id/textView80" />
+
+        <Spinner
+            android:id="@+id/am_pm1"
+            android:layout_width="68dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="291dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/back"
+            app:layout_constraintStart_toEndOf="@+id/from"
+            app:layout_constraintTop_toBottomOf="@+id/textView80" />
+
+        <Spinner
+            android:id="@+id/am_pm2"
+            android:layout_width="68dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="291dp"
+            android:layout_marginTop="165dp"
+            android:background="@drawable/back"
+            app:layout_constraintStart_toEndOf="@+id/from"
+            app:layout_constraintTop_toBottomOf="@+id/textView80" />
+
+        <Spinner
+            android:id="@+id/min1"
+            android:layout_width="74dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="205dp"
+            android:layout_marginTop="120dp"
+
+            android:background="@drawable/back"
+            app:layout_constraintStart_toEndOf="@+id/from"
+            app:layout_constraintTop_toBottomOf="@+id/textView80" />
+
+        <Spinner
+            android:id="@+id/min2"
+            android:layout_width="74dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="205dp"
+            android:layout_marginTop="165dp"
+
+            android:background="@drawable/back"
+            app:layout_constraintStart_toEndOf="@+id/from"
+            app:layout_constraintTop_toBottomOf="@+id/textView80" />
+
+        <Spinner
+            android:id="@+id/hr2"
+            android:layout_width="74dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="165dp"
+            android:background="@drawable/back"
+            app:layout_constraintStart_toEndOf="@+id/from"
+            app:layout_constraintTop_toBottomOf="@+id/textView80" />
+
+        <TextView
+            android:id="@+id/textView84"
+            android:layout_width="6dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="196dp"
+            android:layout_marginTop="110dp"
+            android:gravity="center"
+            android:text=":"
+            android:textSize="30sp"
+            app:layout_constraintStart_toEndOf="@+id/hr1"
+            app:layout_constraintTop_toBottomOf="@+id/dayFinal" />
+
+        <TextView
+            android:id="@+id/textView86"
+            android:layout_width="6dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="196dp"
+            android:layout_marginTop="156dp"
+            android:gravity="center"
+            android:text=":"
+            android:textSize="30sp"
+            app:layout_constraintStart_toEndOf="@+id/hr1"
+            app:layout_constraintTop_toBottomOf="@+id/dayFinal" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="332dp"
+            android:layout_marginTop="169dp"
+            app:layout_constraintBottom_toBottomOf="@+id/hr1"
+            app:layout_constraintStart_toStartOf="@+id/hr1"
+            app:srcCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="332dp"
+            android:layout_marginTop="124dp"
+            app:layout_constraintBottom_toBottomOf="@+id/hr2"
+            app:layout_constraintStart_toStartOf="@+id/hr2"
+            app:srcCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="252dp"
+            android:layout_marginTop="169dp"
+            app:layout_constraintBottom_toBottomOf="@+id/min2"
+            app:layout_constraintStart_toStartOf="@+id/min2"
+            app:srcCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="252dp"
+            android:layout_marginTop="124dp"
+            app:layout_constraintBottom_toBottomOf="@+id/min1"
+            app:layout_constraintStart_toStartOf="@+id/min1"
+            app:srcCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="167dp"
+            android:layout_marginTop="169dp"
+            app:layout_constraintBottom_toBottomOf="@+id/am_pm2"
+            app:layout_constraintStart_toStartOf="@+id/am_pm2"
+            app:srcCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="167dp"
+            android:layout_marginTop="124dp"
+            app:layout_constraintBottom_toBottomOf="@+id/am_pm1"
+            app:layout_constraintStart_toStartOf="@+id/am_pm1"
+            app:srcCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+
+        <TextView
+            android:id="@+id/textView85"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="100dp"
+            android:text="Hrs"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView80" />
+
+        <TextView
+            android:id="@+id/textView87"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="295dp"
+            android:layout_marginTop="100dp"
+            android:text="AM/PM"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView80" />
+
+        <TextView
+            android:id="@+id/textView88"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="209dp"
+            android:layout_marginTop="100dp"
+            android:text="Min"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView80" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/setAppointmentTime"
+        android:layout_width="195dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/back"
+        android:clickable="true"
+        android:enabled="true"
+
+        android:gravity="center"
+        android:onClick="setAppointmentTime"
+        android:text="Appointment Time"
+        android:textColor="#07567C"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dayFinal" />
+
+    <TextView
+        android:id="@+id/firstshifttextview"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="304dp"
+        android:layout_marginEnd="290dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        android:text="First Shift"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/adoptdata"
+        android:layout_width="265dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="304dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        android:text="No Appointment this day!"
+        android:textColor="#070707"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/changebutton"
+        android:layout_width="49dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="200dp"
+        android:background="#039BE5"
+        android:onClick="changetime"
+        android:text="Change"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/sun"
+        app:layout_constraintTop_toBottomOf="@+id/thur" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="374dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="23dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timingtoolbar" />
+
+    <View
+        android:id="@+id/divider9"
+        android:layout_width="374dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timingtoolbar" />
+
+    <View
+        android:id="@+id/divider8"
+        android:layout_width="2dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="23dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timingtoolbar" />
+
+    <View
+        android:id="@+id/divider10"
+        android:layout_width="2dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="394dp"
+        android:layout_marginTop="23dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timingtoolbar" />
+
+    <TextView
+        android:id="@+id/kk"
+        android:layout_width="370dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="YOYO"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dayFinal" />
+
+    <Button
+        android:id="@+id/no"
+        android:layout_width="71dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="3dp"
+        android:onClick="cancel"
+        android:text="No app"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/setAppointmentTime"
+        app:layout_constraintTop_toBottomOf="@+id/dayFinal" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:onClick="wow"
+        android:text="No appointment this day"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.388" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

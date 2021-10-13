@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Abcd</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="action_settings">Settings</string>
+    <!--    <string name="username_validation_msg">Username cannot be blank</string>-->
+    <!--    <string name="signup_success">Welcome User !</string>-->
+    <!--    <string name="pwd_validation_msg">Minimum 8 characters required</string>-->
+    <string name="contact_no">Contact-No.</string>
+    <string name="name_of_patient">Name-of-patient</string>
+    <string name="patient_parent_name">Parent-name</string>
+    <string name="gender">"<b>"Gender--- "</b>"</string>
+    <string name="parentsname">"<b>"Parent\'s Name--- "</b>"</string>
+    <string name="dateofappo">"<b>"Date of Appointment---"</b>"</string>
+    <string name="contactno">"<b>"Contact no---"</b>"</string>
+    <string name="googlepay_button_content_description" />
+
+</resources>

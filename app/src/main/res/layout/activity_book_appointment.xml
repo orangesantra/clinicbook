@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookAppointments.BookAppointment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar5"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#1E88E5"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Book Appointment"
+        app:titleTextColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView61"
+        android:layout_width="303dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="136dp"
+        android:background="#0E59A3"
+        android:backgroundTint="#166DBA"
+        android:gravity="center"
+        android:text="Choose Appointment Date"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="357dp" />
+
+    <TextView
+        android:id="@+id/departname"
+        android:layout_width="231dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="50dp"
+        android:background="#FFFFFF"
+        android:gravity="fill"
+        android:paddingLeft="10dp"
+        android:text="Physician"
+        android:textColor="#0B0B0B"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar5" />
+
+    <TextView
+        android:id="@+id/cliname"
+        android:layout_width="234dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:gravity="fill"
+        android:paddingLeft="10dp"
+        android:text="ServiceName"
+        android:textColor="#0B0B0B"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar5" />
+
+    <TextView
+        android:id="@+id/locationname"
+        android:layout_width="168dp"
+        android:layout_height="26dp"
+        android:background="#FFFFFF"
+        android:gravity="fill"
+        android:paddingLeft="10dp"
+        android:text="Clinic of basipur"
+        android:textColor="#040404"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/departname" />
+
+    <TextView
+        android:id="@+id/firstdate"
+        android:layout_width="120dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="346dp"
+        android:background="@drawable/back"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="dateselected"
+        android:text="NO DATA!"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2" />
+
+    <TextView
+        android:id="@+id/thirddate"
+        android:layout_width="120dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="300dp"
+        android:background="@drawable/back"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="dateselected"
+        android:text="NO DATA!"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2" />
+
+    <TextView
+        android:id="@+id/fifthdate"
+        android:layout_width="120dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="254dp"
+        android:background="@drawable/back"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="dateselected"
+        android:text="NO DATA!"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2" />
+
+    <TextView
+        android:id="@+id/textView70"
+        android:layout_width="150dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/back"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Select any other Date"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/seconddate"
+        android:layout_width="120dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="346dp"
+        android:background="@drawable/back"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="dateselected"
+        android:text="NO DATA!"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3" />
+
+    <TextView
+        android:id="@+id/forthdate"
+        android:layout_width="120dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="300dp"
+        android:background="@drawable/back"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="dateselected"
+        android:text="NO DATA!"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3" />
+
+    <TextView
+        android:id="@+id/sixthdate"
+        android:layout_width="120dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="254dp"
+        android:background="@drawable/back"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="dateselected"
+        android:text="NO DATA!"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="53dp" />
+
+    <View
+        android:id="@+id/divider11"
+        android:layout_width="2dp"
+        android:layout_height="550dp"
+        android:layout_marginTop="80dp"
+        android:background="@color/themecolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider12"
+        android:layout_width="304dp"
+        android:layout_height="2dp"
+        android:background="@color/themecolor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.292" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
