@@ -1,3 +1,3 @@
 # clinicbook
 
-This idea behind this project is do develop an app , where people can book appointment and register to clinics, privete docter's resident, hospital online.
+This idea behind this project was to develope an app, where people can book appointments to clinics and hospitals online.
